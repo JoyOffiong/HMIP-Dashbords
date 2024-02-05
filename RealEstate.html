@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+      <!-- header -->
+  <div class="bg-[#171821] py-6">
+    <div class=" justify-between mx-20 flex items-center">
+      <div class="logo md:w-1/4 w-full">
+        <div class="flex items-end gap-4">
+          <img src="./images/nmrc-logo 1.png" alt="" class="w-24 h-12" />
+          <p class="text-[#5c5d64]">
+            Housing Market <br />
+            Information Portal
+          </p>
+        </div>
+      </div>
+      <!-- desktop header -->
+      <div class="w-3/4 hidden md:block  items-start gap-10">
+        <ul class="flex items-start gap-10 text-[#5c5d64]">
+          <li>Housing Data Portal</li>
+          <li>Property Information</li>
+          <li>Surveys</li>
+          <li>Housing Market Directory</li>
+        </ul>
+      </div>
+      <div class="block md:hidden">
+        <i
+          class="fa fa-bars"
+          aria-hidden="true"
+          color="white"
+          class="text-white bg-white"
+        ></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- heroSection -->
+  <div>
+    <div class="flex mb-10" >
+      <div class="relative">
+        <div class="w-full top-0">
+          <img src="./images/heroSectionImage.png" alt="" class="h-[400px] md:h-[324px] w-full" />
+        </div>
+        <div class="absolute top-20 left-[15%] md:left-[25%] right-[15%] md:right-[25%] text-center">
+          <div class="text-center">
+            <p class="text-white text-4xl">Datasets</p>
+            <p class="text-white pt-2">Home / Dashboards / Nigerian Real Estate Data Collation Management Program Dashboard</p>
+          </div>
+
+          <div class="text-center py-4">
+            <select id="fruit" name="fruit" class="w-4/6  rounded-lg p-2">
+                <option value="apple"><a href="/dashboard.html">Dashboards</a> </option>
+                <option value="banana"> <a href="/MortgageBoard.html">HMIP Mortgage statistics board</a> </option>
+                <option value="orange"><a href="/HousingPriceIndex.html">Housing Price Index Dashboard</a> </option>
+                <option value="grape"> <a href="/RealEstate.html">Nigerian Real Estate Data Collation Management Program Dashboard</a> </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- body -->
+  <div class="my-10 mx-[5%] md:mx-[8%] ">
+     <!-- logos -->
+      <p class="font-bold  text-center text-xl px-10 md:text-2xl mb-10">NIGERIAN REAL ESTATE DATA COLLATION MANAGEMENT PROGRAM</p>
+      <div class="bg-[#27471f] px-6 rounded-lg mx-auto  ">
+          <div class="w-10/12 mx-auto flex flex-col md:flex-row items-center justify-between">
+              <img src="./images/NMRC.png" alt="" class="h-24 w-24 object-contain">
+              <img src="./images/REDA.png" alt="" class="h-24 w-24">
+              <img src="./images/CoteOfArm.png" alt="" class="h-36 w-36 object-contain">
+              <img src="./images/FederalMortgage.png" alt="" class="h-36 w-36  object-contain">
+          </div>
+   </div>
+
+   <div class="flex flex-col justify-between md:flex-row mx-auto my-10 gap-16">  
+      <div class="rounded-lg bg-gray-200 p-4 md:w-[30%] w-full">
+          <div class="rounded-lg bg-gray-100 p-4 mt-4">
+              <p class="pb-2">State</p>
+              <select id="fruit" name="fruit" class="w-4/6  rounded-lg p-2">
+                  <option value="apple">Apple</option>
+                  <option value="banana">Banana</option>
+                  <option value="orange">Orange</option>
+                  <option value="grape">Grape</option>
+              </select>
+          </div>
+          <div class="rounded-lg bg-gray-100 p-4 mt-4">
+              <p class="pb-2">House Type</p>
+              <select id="fruit" name="fruit" class="w-4/6  rounded-lg p-2">
+                  <option value="apple">Apple</option>
+                  <option value="banana">Banana</option>
+                  <option value="orange">Orange</option>
+                  <option value="grape">Grape</option>
+              </select>
+          </div>
+          <div class="rounded-lg bg-gray-100 p-4 mt-4">
+              <p class="pb-2">Geographical Location</p>
+              <select id="fruit" name="fruit" class="w-4/6  rounded-lg p-2">
+                  <option value="apple">Apple</option>
+                  <option value="banana">Banana</option>
+                  <option value="orange">Orange</option>
+                  <option value="grape">Grape</option>
+              </select>
+          </div>
+          <div class="rounded-lg bg-gray-100 p-4 mt-4">
+              <p class="pb-2">Quarter</p>
+              <select id="fruit" name="fruit" class="w-4/6  rounded-lg p-2">
+                  <option value="apple">q1</option>
+                  <option value="banana">q2</option>
+                  <option value="orange">q3</option>
+                  <option value="grape">q4</option>
+              </select>
+          </div>
+
+          <div >
+              <div class="flex justify-between mt-4">
+                  <p class="bg-white p-2 rounded-lg">Start Year</p>
+                  <p class="bg-white p-2 rounded-lg">End Year</p>
+              </div>
+              
+              <div class="mt-4">
+                  <img src="./images/line.png" alt="" >
+              </div>
+          </div>
+      </div>
+
+      <div class="bg-yellow-50 px-8 py-6 w-full md:w-[65%] rounded-lg">
+          <div class="w-11/12">
+              <p class="text-gray-500">State and Geographical Location</p>
+              <div >
+                  <div class="flex items-center gap-10 my-[10px]">
+                      <p>Geographical Location</p> 
+                      <p> <span class=" h-16 w-16 rounded-full bg-gray-700"></span>South South</p>
+                  </div>
+                   
+
+                     <div class="w-full text-center">
+                      <img src=".//images/map1.png"  alt="">
+                     </div>
+              </div>
+          </div>
+       
+      </div>
+   </div>
+
+   <!-- green background map -->
+   <div class='bg-[#edf5ff] p-4 mx-auto rounded-lg mb-10' >
+      <p class="text-[#c3c6ca] pb-2">Average Price of Completed Hosues by state and geographical location</p>
+      <div class="flex gap-8  text-[#86888c]">
+         <p>Geological Location</p>
+         <p>South South</p>
+         <p>South East</p>
+      </div>
+      <div class="mt-4">
+        <img src="./images/Chart (4).png" alt="" class="">
+      </div>
+      
+   </div >
+ 
+
+  </div>
+
+<!-- footer -->
+<footer class="bg-[#508A73]">
+  <div class="py-4 px-2 md:px-8 ">
+      <div class="flex flex-col md:flex-row gap-10 items-start text-white text-sm md:mx-20 mx-5 mt-12">
+          <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">About</h4>
+              <p class="w-full md:w-9/12">Nigeria Mortgage Refinance Company (NMRC ) is the Quickest and easy place to access the data you need to make important business decisions.</p>
+          </div>
+          <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">Account Links</h4>
+              <ul class="flex flex-col gap-2">
+                <li>Housing Data Portal</li>
+                <li>Property Information</li>
+                <li>Surveys</li>
+                <li>Housing Market Directory</li>
+                  <li>Dashboard</li>
+                  <li>News</li>
+                  <li>Contact</li>
+              </ul>
+          </div>
+          <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">Contact Us</h4>
+              <ul class="flex flex-col gap-2 pb-8">
+                  <li>Property</li>
+                  <li>Dashboard</li>
+              </ul>
+              <ul>
+                  <li class="pb-4">Hr:  +234 456 7890 12</li>
+                  <li class="pb-4">Hr:  +234 456 7890 12</li>
+              </ul>
+          </div>
+      </div>
+     
+      <div class=" py-2 md:mx-20 mx-5 mt-10 ">
+          <div class="flex w-full gap-6 md:text-left text-center flex-col md:flex-row bg-[#979797] px-0 md:px-4 py-2 items-center justify-between">
+              <p class="w-full md:w-1/2 pl-0 md:pl-6 text-white">Newsletter Sign up</p>
+              <div class="bg-white flex-col md:flex-row flex px-4 justify-between w-full md:w-2/3 rounded-lg py-2">
+                  <input type="text" placeholder="Enter your email address" class="text-black text-center md:pb-4 pb-0 md:text-center">
+                  <button class=" py-1 px-8 rounded-md text-white">Submit</button>
+              </div>
+             
+          </div>
+             
+      </div>
+
+      <div class="text-center text-white pt-10 pb-20">
+        <p>Copyright © 2023, Nigeria Mortgage Refinance Company.</p>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

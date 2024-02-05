@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div>
+          <!-- header -->
+      <div class="bg-[#171821] py-6">
+        <div class=" justify-between mx-20 flex items-center">
+          <div class="logo md:w-1/4 w-full">
+            <div class="flex items-end gap-4">
+              <img src="./images/nmrc-logo 1.png" alt="" class="w-24 h-12" />
+              <p class="text-[#5c5d64]">
+                Housing Market <br />
+                Information Portal
+              </p>
+            </div>
+          </div>
+          <!-- desktop header -->
+          <div class="w-3/4 hidden md:block  items-start gap-10">
+            <ul class="flex items-start gap-10 text-[#fff]">
+              <li>Housing Data Portal</li>
+              <li>Property Information</li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <i
+              class="fa fa-bars"
+              aria-hidden="true"
+              color="white"
+              class="text-white bg-white"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- heroSection -->
+      <div>
+        <div class="flex mb-10" >
+          <div class="relative">
+            <div class="w-full top-0">
+              <img src="./images/heroSectionImage.png" alt="" class="h-[400px] md:h-[324px] w-full" />
+            </div>
+            <div class="absolute top-20 left-[15%] md:left-[25%] right-[15%] md:right-[25%] text-center">
+              <div class="text-center">
+                <p class="text-white text-4xl">Dashboard</p>
+                <p class="text-white pt-2">Home / Dashboards</p>
+              </div>
+    
+              <div class="text-center py-4">
+                <select id="fruit" name="fruit" class="w-4/6  rounded-lg p-2">
+                    <option value="apple"><a href="/dashboard.html">Dashboards</a> </option>
+                    <option value="banana"> <a href="/MortgageBoard.html">HMIP Mortgage statistics board</a> </option>
+                    <option value="orange"><a href="/HousingPriceIndex.html">Housing Price Index Dashboard</a> </option>
+                    <option value="grape"> <a href="/RealEstate.html">Nigerian Real Estate Data Collation Management Program Dashboard</a> </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+<!-- body -->
+<div class="mx-[5%] md:mx-[8%]">
+  <!--  welcome message-->
+  <div class="relative">
+    <div class="rounded-md mx-auto">
+      <img src="./images/housingMarket.png" alt="" class="rounded-md h-[700px] md:h-[349px]" />
+    </div>
+    <div class="absolute top-28 left-1/2 transform -translate-x-1/2">
+      <div class="text-center">
+        <p class="text-white text-xl font-medium">
+          Welcome to our Housing Market Information Portal! Here, you'll
+          find comprehensive data and insights to empower your housing
+          decisions. Explore real-time market trends, property prices, and
+          more. Whether you're buying, selling, or renting, make informed
+          choices with our reliable housing market information.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- sections -->
+  <div class=" bg-gray-200 my-10 p-10">
+
+      <div class="flex flex-row justify-between flex-wrap gap-8">
+
+        <a href="/MortgageBoard.html  " class="w-full md:w-[30%]">
+          <span class="bg-[#C02020] p-4 rounded-lg flex gap-4 items-center">
+            <span class="p-2 rounded-lg bg-white">
+              <img src="./images/house.png" alt="" class="w-8 h-8">
+            </span>
+           <span class="text-white">Housing Statistics <br>
+            Dashboard</span>
+           </span>
+          </a>
+          
+          <a href="/HousingPriceIndex.html  " class="w-full md:w-[30%]">
+            <span class="bg-[#276c43] p-4 rounded-lg flex gap-4 items-center">
+            <span class="p-2 rounded-lg bg-white">
+              <img src="./images/price-tag.png" alt="" class="w-8 h-8">
+            </span>
+           <span class="text-white">Housing Price Index
+           <br>
+            Dashboard</span>
+          </span>
+        </a>
+
+        <a href="/HousingPriceIndex.html  " class="w-full md:w-[30%]">
+         
+           
+          <span class="bg-[#2577d3]  p-4 rounded-lg flex gap-4 items-center">
+            <span class="p-2 rounded-lg bg-white">
+              <img src="./images/dashboard.png" alt="" class="w-8 h-8">
+            </span>
+           <span class="text-white">NRE - DCMP
+              <br>
+              Statistics</span>
+           </span>
+          </a>
+
+      </div>
+
+  </div>
+
+</div>
+     
+      <!-- footer -->
+        <footer class="bg-[#508A73]">
+            <div class="py-4 px-2 md:px-8 ">
+                <div class="flex flex-col md:flex-row gap-10 items-start text-white text-sm md:mx-20 mx-5 mt-12">
+                    <div class="w-full md:w-1/3">
+                        <h4 class="pb-4 font-bold">About</h4>
+                        <p class="w-full md:w-9/12">Nigeria Mortgage Refinance Company (NMRC ) is the Quickest and easy place to access the data you need to make important business decisions.</p>
+                    </div>
+                    <div class="w-full md:w-1/3">
+                        <h4 class="pb-4 font-bold">Account Links</h4>
+                        <ul class="flex flex-col gap-2">
+                          <li>Housing Data Portal</li>
+                          <li>Property Information</li>
+                          <li>Surveys</li>
+                          <li>Housing Market Directory</li>
+                            <li>Dashboard</li>
+                            <li>News</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/3">
+                        <h4 class="pb-4 font-bold">Contact Us</h4>
+                        <ul class="flex flex-col gap-2 pb-8">
+                            <li>Property</li>
+                            <li>Dashboard</li>
+                        </ul>
+                        <ul>
+                            <li class="pb-4">Hr:  +234 456 7890 12</li>
+                            <li class="pb-4">Hr:  +234 456 7890 12</li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class=" py-2 md:mx-20 mx-5 mt-10 ">
+                    <div class="flex w-full gap-6 md:text-left text-center flex-col md:flex-row bg-[#979797] px-0 md:px-4 py-2 items-center justify-between">
+                        <p class="w-full md:w-1/2 pl-0 md:pl-6 text-white">Newsletter Sign up</p>
+                        <div class="bg-white flex-col md:flex-row flex px-4 justify-between w-full md:w-2/3 rounded-lg py-2">
+                            <input type="text" placeholder="Enter your email address" class="text-black text-center md:pb-4 pb-0 md:text-center">
+                            <button class=" py-1 px-8 rounded-md text-white">Submit</button>
+                        </div>
+                       
+                    </div>
+                       
+                </div>
+    
+                <div class="text-center text-white pt-10 pb-20">
+                  <p>Copyright © 2023, Nigeria Mortgage Refinance Company.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
