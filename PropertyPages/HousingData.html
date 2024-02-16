@@ -128,53 +128,77 @@
 
             <div data-tab-content="" class="mx-auto mt-10 mb-20">
               <!-- overview -->
-              <div class="block opacity-100" id="app" role="tabpanel">
+              <div class=" opacity-100 flex items-center justify-between" id="app" role="tabpanel">
+               <div class="w-[50%]">
+
                 <p>
-                  Select Location using dropdown or the intereactive map below
+                Select Location using dropdown or the intereactive map below
                 </p>
 
-                <div class="my-10 flex gap-2">
-                  <div class="border-1 border-black md:w-[40%] w-full">
-                    <select
-                      id="fruit"
-                      name="fruit"
-                      class="w-full rounded-sm p-1 md:w-[80%]"
-                    >
-                      <option value="apple">
-                        <img
-                          src="../images/location.png"
-                          alt=""
-                          class="h-[13px] w-[13px]"
-                        />
-                        <a href="./dashboard.html">KWARA</a>
-                      </option>
-                      <option value="banana">
-                        <a href="/MortgageBoard.html">Akwa Ibom</a>
-                      </option>
-                      <option value="orange">
-                        <a href="/HousingPriceIndex.html">Edo</a>
-                      </option>
-                      <option value="grape">
-                        <a href="/RealEstate.html">Benue</a>
-                      </option>
-                    </select>
-                  </div>
-                  <button class="bg-[#398559] text-white p-2">
-                    Download PDF
-                  </button>
+              <div class="my-10 flex gap-2">
+                <div class="border-1 border-black md:w-[40%] w-full">
+                  <select
+                    id="fruit"
+                    name="fruit"
+                    class="w-full rounded-sm p-1 md:w-[80%]"
+                  >
+                    <option value="apple">
+                      <img
+                        src="../images/location.png"
+                        alt=""
+                        class="h-[13px] w-[13px]"
+                      />
+                      <a href="./dashboard.html">KWARA</a>
+                    </option>
+                    <option value="banana">
+                      <a href="/MortgageBoard.html">Akwa Ibom</a>
+                    </option>
+                    <option value="orange">
+                      <a href="/HousingPriceIndex.html">Edo</a>
+                    </option>
+                    <option value="grape">
+                      <a href="/RealEstate.html">Benue</a>
+                    </option>
+                  </select>
+                </div>
+                <button class="bg-[#398559] text-white p-2">
+                  Download PDF
+                </button>
+              </div>
+
+              <div class="flex items-end">
+                <div>
+                  <img
+                    src="../images/map1.png"
+                    alt=""
+                    class="w-[721px] h-[529px]"
+                  />
                 </div>
 
-                <div class="flex items-end">
-                  <div>
-                    <img
-                      src="../images/map1.png"
-                      alt=""
-                      class="w-[721px] h-[529px]"
-                    />
-                  </div>
-
-                  <div class="rounded-lg px-4 py-6 bg-[#f2f2f2]"></div>
+                <div class="rounded-lg px-4 py-6 bg-[#f2f2f2]"></div>
+              </div>
+            
+              </div>
+              <div class="w-[50%] mt-12 bg-[#f2f2f2] rounded-lg py-8 px-4">
+                <div class="border-2 border-black mb-6 rounded-md p-2">
+                  Rental Housing
                 </div>
+                <div class="border-2 border-black mb-6 rounded-md p-2">
+                 Primary Rental Market
+                </div>
+                <div class="border-2 border-black mb-6 rounded-md p-2">
+                 Secondary Rental Market
+                </div>
+                <div class="border-2 border-black mb-6 rounded-md p-2">
+                 New Housing Construction
+                </div>
+                <div class="border-2 border-black mb-6 rounded-md p-2">
+                 Population Stock
+                </div>
+                <div class="border-2 border-black mb-6 rounded-md p-2">
+                Core Housing Need
+                </div>
+            </div>
               </div>
 
               <div

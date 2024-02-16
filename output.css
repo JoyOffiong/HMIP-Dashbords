@@ -1069,6 +1069,10 @@ video {
   margin-top: 5rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2672,6 +2676,11 @@ video {
 .py-\[5px\]{
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-0{
