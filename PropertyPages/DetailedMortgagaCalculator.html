@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Detailed Morrtgage Calculator</title>
+  </head>
+  <body class="font-confortaa">
+    <div>
+      <!-- header -->
+      <div class="bg-[#171821] py-6">
+        <div class="justify-between mx-20 flex items-center">
+          <div class="logo md:w-1/4 w-full">
+            <div class="flex items-end gap-4">
+              <img src="../images/nmrc-logo 1.png" alt="" class="w-24 h-12" />
+              <p class="text-[#5c5d64]">
+                Housing Market <br />
+                Information Portal
+              </p>
+            </div>
+          </div>
+          <!-- desktop header -->
+          <div class="w-3/4 hidden md:block items-start gap-10">
+            <ul class="flex items-start gap-10 text-[#fff]">
+              <li>Housing Data Portal</li>
+              <li>Property Information</li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <i
+              class="fa fa-bars"
+              aria-hidden="true"
+              color="white"
+              class="text-white bg-white"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-10">
+        <p class="my-24 text-2xl font-bold text-center">
+          Detailed Amortization Mortgage <br />
+          Calculator
+        </p>
+
+        <div class="flex flex-row w-[80%] gap-8 items-start mx-auto justify-between">
+          <div
+            class="flex flex-col border-2 rounded-lg w-full md:w-[40%] mx-auto"
+          >
+            <div class="py-4 px-4 bg-white">
+              <div class="pb-4">
+                <div class="pb-6 mt-10">
+                  <h2 class="pb-2 font-bold text-2xl md:text-3xl">
+                    Mortgage Amortization Calculator
+                  </h2>
+                  <p class="text-sm">
+                    Use this calculator to input the details of your loan and
+                    see how those payments break down over your loan term.
+                  </p>
+                </div>
+
+                <div class="px-1 md:px-2 md:pl-4">
+                  <form class="">
+                    <div class="mb-6 md:mb-4 flex flex-col">
+                      <label class="pb-2 font-bold">Loan Amount</label>
+                      <input type="number" class="px-4 py-2 border" />
+                    </div>
+                    <div class="mb-6 md:mb-4 flex flex-col">
+                      <label class="pb-2 font-bold">Loan term</label>
+                      <div class="flex gap-8">
+                        <input
+                          type="number"
+                          class="px-4 py-1 border w-2/3"
+                          placeholder="20"
+                        />
+                        <input
+                          type="text"
+                          class="px-4 py-1 border w-1/3"
+                          placeholder="years"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-6 md:mb-4 flex flex-col">
+                      <label class="pb-2 font-bold">Interest Rate</label>
+                      <input type="text" class="py-1 border" placeholder="%" />
+                    </div>
+                    <div class="mb-6 md:mb-4 flex flex-col">
+                      <label class="pb-2 font-bold">Loan Start Date</label>
+                      <input type="date" class="py-1 border" placeholder="%" />
+                    </div>
+                    <button
+                      class="text-center w-full py-2 bg-[#1b483e] text-white"
+                    >
+                      calculate
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#1b483e] w-full z-4 text-white text-center">
+              <div class="md:pt-10 pt-10 p-6">
+                <div class="pb-4">
+                  <p class="text-base text-left">Summary</p>
+                </div>
+
+                <hr class="bg-white" />
+
+                <div class="pt-4 flex flex-col gap-6 text-center">
+                  <p class="flex justify-between">
+                    Monthly Payment <span>N75000</span>
+                  </p>
+                  <p class="flex justify-between">
+                    Total Interest Paid <span>N25000</span>
+                  </p>
+                  <p class="flex justify-between">
+                    Total Loan Paid <span>N25000</span>
+                  </p>
+                  <p class="flex justify-between">
+                    Pay off Date <span>Feb, 2025</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[60%] text-white">
+            <div class="flex gap-8 w-full justify-between">
+              <div class="p-4 bg-[#275148] w-full md:w-[50%] rounded-md">
+                <p class="pb-8 leading-10">
+                  Ammortization For <br />
+                  Monthly Payment:
+                </p>
+                <p>₦ 25,334.27 over 30 years</p>
+              </div>
+              <div class="p-4 bg-[#398559] w-full md:w-[50%] rounded-md">
+                <p class="pb-8 leading-8">
+                  Affordability Test Monthly Income: ₦ 100,000.00
+                   <br>You are able to afford a mortgage
+                  with monthly payment of: ₦ 33,000.00
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <img src="../images/detailedMortgage.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-[#508A73]">
+        <div class="py-4 px-2 md:px-8">
+          <div
+            class="flex flex-col md:flex-row gap-10 items-start text-white text-sm md:mx-20 mx-5 mt-12"
+          >
+            <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">About</h4>
+              <p class="w-full md:w-9/12">
+                Nigeria Mortgage Refinance Company (NMRC ) is the Quickest and
+                easy place to access the data you need to make important
+                business decisions.
+              </p>
+            </div>
+            <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">Account Links</h4>
+              <ul class="flex flex-col gap-2">
+                <li>Housing Data Portal</li>
+                <li>Property Information</li>
+                <li>Surveys</li>
+                <li>Housing Market Directory</li>
+                <li>Dashboard</li>
+                <li>News</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">Contact Us</h4>
+              <ul class="flex flex-col gap-2 pb-8">
+                <li>Property</li>
+                <li>Dashboard</li>
+              </ul>
+              <ul>
+                <li class="pb-4">Hr: +234 456 7890 12</li>
+                <li class="pb-4">Hr: +234 456 7890 12</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="py-2 md:mx-20 mx-5 mt-10">
+            <div
+              class="flex w-full gap-6 md:text-left text-center flex-col md:flex-row bg-[#979797] px-0 md:px-4 py-2 items-center justify-between"
+            >
+              <p class="w-full md:w-1/2 pl-0 md:pl-6 text-white">
+                Newsletter Sign up
+              </p>
+              <div
+                class="bg-white flex-col md:flex-row flex px-4 justify-between w-full md:w-2/3 rounded-lg py-2"
+              >
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  class="text-black text-center md:pb-4 pb-0 md:text-center"
+                />
+                <button class="py-1 px-8 rounded-md text-white bg">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center text-white pt-10 pb-20">
+            <p>Copyright © 2023, Nigeria Mortgage Refinance Company.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

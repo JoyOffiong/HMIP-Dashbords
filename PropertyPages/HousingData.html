@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    <script src="tabs.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housing Data</title>
+  </head>
+  <body class="font-confortaa">
+    <div>
+      <!-- header -->
+      <div class="bg-[#171821] py-6">
+        <div class="justify-between mx-20 flex items-center">
+          <div class="logo md:w-1/4 w-full">
+            <div class="flex items-end gap-4">
+              <img src="../images/nmrc-logo 1.png" alt="" class="w-24 h-12" />
+              <p class="text-[#5c5d64]">
+                Housing Market <br />
+                Information Portal
+              </p>
+            </div>
+          </div>
+          <!-- desktop header -->
+          <div class="w-3/4 hidden md:block items-start gap-10">
+            <ul class="flex items-start gap-10 text-[#fff]">
+              <li>Housing Data Portal</li>
+              <li>Property Information</li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <i
+              class="fa fa-bars"
+              aria-hidden="true"
+              color="white"
+              class="text-white bg-white"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- herosection -->
+      <div class="relative mb-20">
+        <img src="../images/dashboardImg.png" alt="" class="h-[260px] w-full" />
+        <div
+          class="absolute md:top-[100px] top-20 left-[15%] md:left-[25%] right-[15%] md:right-[25%] text-center"
+        >
+          <div class="py-10 px-10 md:px-20 bg-[#262637]">
+            <p class="text-[#1cfa78] text-2xl">Housing Data</p>
+            <p class="text-[#8c8c92]">
+              Get easy access to latest housing market data for Nigeria
+            </p>
+            <div class="flex md:gap-8 mt-8 md:flex-row flex-col gap-4">
+              <input
+                type="search"
+                name=""
+                id=""
+                class="p-2 w-full rounded-sm"
+                placeholder="State or LGA"
+              />
+              <button class="bg-[#1cfa78] text-[#262637] px-4 rounded-sm">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tabs -->
+
+      <div class="mx-auto w-[80%]">
+        <div>
+          <div class="relative right-0">
+            <div class="w-[50%]">
+              <ul
+                class="relative flex flex-wrap p-1 list-none"
+                data-tabs="tabs"
+                role="list"
+              >
+                <li class="z-30 flex-auto text-center">
+                  <a
+                    class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                    data-tab-target=""
+                    active=""
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="app"
+                  >
+                    <span class="ml-1">Overview</span>
+                  </a>
+                </li>
+                <li class="z-30 flex-auto text-center">
+                  <a
+                    class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                    data-tab-target=""
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="message"
+                  >
+                    <span class="ml-1">Full View</span>
+                  </a>
+                </li>
+                <li class="z-30 flex-auto text-center">
+                  <a
+                    class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                    data-tab-target=""
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="settings"
+                  >
+                    <span class="ml-1">Compare</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr class="border-1 border-black" />
+
+            <div data-tab-content="" class="mx-auto mt-10 mb-20">
+              <!-- overview -->
+              <div class="block opacity-100" id="app" role="tabpanel">
+                <p>
+                  Select Location using dropdown or the intereactive map below
+                </p>
+
+                <div class="my-10 flex gap-2">
+                  <div class="border-1 border-black md:w-[40%] w-full">
+                    <select
+                      id="fruit"
+                      name="fruit"
+                      class="w-full rounded-sm p-1 md:w-[80%]"
+                    >
+                      <option value="apple">
+                        <img
+                          src="../images/location.png"
+                          alt=""
+                          class="h-[13px] w-[13px]"
+                        />
+                        <a href="./dashboard.html">KWARA</a>
+                      </option>
+                      <option value="banana">
+                        <a href="/MortgageBoard.html">Akwa Ibom</a>
+                      </option>
+                      <option value="orange">
+                        <a href="/HousingPriceIndex.html">Edo</a>
+                      </option>
+                      <option value="grape">
+                        <a href="/RealEstate.html">Benue</a>
+                      </option>
+                    </select>
+                  </div>
+                  <button class="bg-[#398559] text-white p-2">
+                    Download PDF
+                  </button>
+                </div>
+
+                <div class="flex items-end">
+                  <div>
+                    <img
+                      src="../images/map1.png"
+                      alt=""
+                      class="w-[721px] h-[529px]"
+                    />
+                  </div>
+
+                  <div class="rounded-lg px-4 py-6 bg-[#f2f2f2]"></div>
+                </div>
+              </div>
+
+              <div
+                class="hidden opacity-0 mx-auto mt-10"
+                id="message"
+                role="tabpanel"
+              >
+                <p>
+                  Select Location using dropdown or the intereactive map below
+                </p>
+              </div>
+
+              <!-- Compare -->
+              <div class="hidden opacity-0" id="settings" role="tabpanel">
+                <div>
+                  
+
+                  <div class="bg-[#edf5ff] p-4 mx-auto rounded-lg">
+                    <p class="text-[#c3c6ca] pb-2">
+                      Average Price of Completed Hosues by state and
+                      geographical location
+                    </p>
+                    <div class="flex gap-8 text-[#86888c]">
+                      <p>Geological Location</p>
+                      <p>South South</p>
+                      <p>South East</p>
+                    </div>
+                    <div class="mt-4">
+                      <img src="../images/Chart (4).png" alt="" class="" />
+                    </div>
+                    <div class="flex gap-8 flex-row justify-end">
+                      <p>Export as</p>
+                      <p>Embed Code</p>
+                      <p>API</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="bg-[#508A73]">
+        <div class="py-4 px-2 md:px-8">
+          <div
+            class="flex flex-col md:flex-row gap-10 items-start text-white text-sm md:mx-20 mx-5 mt-12"
+          >
+            <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">About</h4>
+              <p class="w-full md:w-9/12">
+                Nigeria Mortgage Refinance Company (NMRC ) is the Quickest and
+                easy place to access the data you need to make important
+                business decisions.
+              </p>
+            </div>
+            <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">Account Links</h4>
+              <ul class="flex flex-col gap-2">
+                <li>Housing Data Portal</li>
+                <li>Property Information</li>
+                <li>Surveys</li>
+                <li>Housing Market Directory</li>
+                <li>Dashboard</li>
+                <li>News</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/3">
+              <h4 class="pb-4 font-bold">Contact Us</h4>
+              <ul class="flex flex-col gap-2 pb-8">
+                <li>Property</li>
+                <li>Dashboard</li>
+              </ul>
+              <ul>
+                <li class="pb-4">Hr: +234 456 7890 12</li>
+                <li class="pb-4">Hr: +234 456 7890 12</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="py-2 md:mx-20 mx-5 mt-10">
+            <div
+              class="flex w-full gap-6 md:text-left text-center flex-col md:flex-row bg-[#979797] px-0 md:px-4 py-2 items-center justify-between"
+            >
+              <p class="w-full md:w-1/2 pl-0 md:pl-6 text-white">
+                Newsletter Sign up
+              </p>
+              <div
+                class="bg-white flex-col md:flex-row flex px-4 justify-between w-full md:w-2/3 rounded-lg py-2"
+              >
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  class="text-black text-center md:pb-4 pb-0 md:text-center"
+                />
+                <button class="py-1 px-8 rounded-md text-white bg">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center text-white pt-10 pb-20">
+            <p>Copyright © 2023, Nigeria Mortgage Refinance Company.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="node_modules/@material-tailwind/html/scripts/tabs.js"></script>
+
+  <!-- from cdn -->
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
+</html>
